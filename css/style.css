@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../assets/fonts/gothampro_bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../assets/fonts/gothampro_black.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url("../assets/fonts/gothampro.ttf");
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 14px;
+  line-height: 13.4px;
+  font-weight: 400;
+  background-color: #E5E5E5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 750px;
+  height: 449px;
+  border-radius: 20px;
+}
+
+.popup__left {
+  position: relative;
+  background-color: #EFEFEF;
+  max-width: 310px;
+  padding: 43px 12px 56px;
+  border-radius: 20px 0 0 20px;
+}
+
+@media (max-width: 720px) {
+  .popup__left {
+    display: none;
+  }
+}
+
+.popup__left::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background: url(../assets/img/popup-shadow.svg) center center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.popup__left::before {
+  position: absolute;
+  top: 72%;
+  left: 74%;
+  content: '';
+  background: url(../assets/img/popup-arrow.svg) center center/cover no-repeat;
+  width: 120px;
+  height: 60px;
+}
+
+.popup__left-txt {
+  font-family: 'Gotham Pro';
+  font-size: 92px;
+  line-height: 88px;
+  font-weight: 900;
+  word-break: break-all;
+  text-align: right;
+  color: #E5E5E5;
+}
+
+.popup__left-img {
+  position: absolute;
+  top: 47px;
+  left: -50px;
+  width: 394px;
+  height: 337px;
+  z-index: 1;
+}
+
+.popup__right {
+  max-width: 440px;
+  background-color: #FFFFFF;
+  padding: 26px 58px 63px;
+  border-radius: 0 20px 20px 0;
+}
+
+@media (max-width: 720px) {
+  .popup__right {
+    border-radius: 20px;
+    padding: 20px;
+  }
+}
+
+.popup__right-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.popup__title-1 {
+  font: 900 24px/23px 'Gotham Pro';
+  text-transform: uppercase;
+  margin-bottom: 49px;
+}
+
+.popup__title-2 {
+  font: 900 20px/22px 'Gotham Pro';
+  text-transform: uppercase;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.popup .over-title {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.popup .strong {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.popup .small {
+  display: block;
+  margin-bottom: 34px;
+}
+
+.popup .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 323px;
+  margin: 0 auto;
+}
+
+.popup .form__txt {
+  font: 400 12px/11.5px 'Gotham Pro';
+  margin-bottom: 6px;
+}
+
+.popup .form__email {
+  height: 50px;
+  border: 2px solid #F3CE00;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.popup .form__email::-webkit-input-placeholder {
+  font: 700 14px/13.4px 'Gotham Pro';
+  color: #0D0D0D;
+}
+
+.popup .form__email:-ms-input-placeholder {
+  font: 700 14px/13.4px 'Gotham Pro';
+  color: #0D0D0D;
+}
+
+.popup .form__email::-ms-input-placeholder {
+  font: 700 14px/13.4px 'Gotham Pro';
+  color: #0D0D0D;
+}
+
+.popup .form__email::placeholder {
+  font: 700 14px/13.4px 'Gotham Pro';
+  color: #0D0D0D;
+}
+
+.popup .form__email:focus {
+  background-color: #f3cf002c;
+  outline: #F3CE00;
+}
+
+.popup .form__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, right top, from(#FF5621), to(#F21313));
+  background: linear-gradient(to right, #FF5621, #F21313);
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  font: 900 16px/17px 'Gotham Pro';
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.popup .form__link:hover {
+  -webkit-box-shadow: 0 0 10px 2px #ffd51cc2;
+          box-shadow: 0 0 10px 2px #ffd51cc2;
+}
